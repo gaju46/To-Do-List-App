@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  font-family: "SF Pro Text", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todo-wrapper{
+  width: 800px;
+  margin: auto;
+}
+
+.input-wrapper,#task-editor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg,#153677,#4e085f);
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: rgb(251, 251, 251);
+  width: 100%;
+  max-width: 200px;
+  background: transparent;
+  margin: 10px auto 20px;
+  padding: 10px 10px 10px;
+  border-radius: 10px;
+  
+}
+
+ h1:hover {
+  background-color:rgb(28, 25, 25);
+
+ }
+
+.h1::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px; 
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.h1:hover::after {
+  width: 100%; 
+}
+
+
+#taskInput {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #ccc;
+}
+
+#editTask{
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #ccc;
+}
+
+
+#addTaskBtn {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #db5234;
+  color: rgb(255, 255, 255);
+  border: chocolate;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  width: auto;
+  min-width: 500px;
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+}
+
+#addTaskBtn:hover {
+  background-color: #c64a2f;
+}
+
+.SaveButton{
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #153677;
+
+}
+
+.editBtn {
+  background-color: #ffc107;
+}
+
+.deleteBtn {
+  background-color: #dc3545;
+}
+
+.completeBtn {
+  background-color: #007bff;
+}
+
+.SaveButton:hover {
+  background-color: #1c4d92; 
+}
+
+.editBtn:hover {
+  background-color: #e0a800;
+}
+
+.deleteBtn:hover {
+  background-color: #c82333; 
+}
+
+.completeBtn:hover {
+  background-color: #0056b3; 
+}
+
+.completed {
+  /* text-decoration: line-through; */
+  color: grey;
+  }
+
+.completed::before{
+  content: '✅';
+  width:20px;
+  height: 20px;
+  color: grey;
+}
